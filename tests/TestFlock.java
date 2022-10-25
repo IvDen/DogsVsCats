@@ -12,8 +12,8 @@ public class TestFlock {
     void checkSizeOfFlock(){
         Flock catFlock = new Flock(AnimalType.CAT);
         Flock dogFlock = new Flock(AnimalType.DOG);
-        assertTrue(catFlock.getSizeOfFlock() <= 10 || catFlock.getSizeOfFlock() >= 1);
-        assertTrue(dogFlock.getSizeOfFlock() <= 10 || dogFlock.getSizeOfFlock() >= 1);
+        assertTrue(catFlock.getSizeOfFlock() <= 10 && catFlock.getSizeOfFlock() >= 1);
+        assertTrue(dogFlock.getSizeOfFlock() <= 10 && dogFlock.getSizeOfFlock() >= 1);
     }
 
     @RepeatedTest(50)
