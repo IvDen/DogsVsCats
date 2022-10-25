@@ -4,9 +4,6 @@ import java.util.Random;
 public class Flock {
     private ArrayList<Animal> flock;
 
-    public int getSizeOfFlock(){
-        return this.flock.size();
-    }
     public Flock(AnimalType type) {
         long seed = System.currentTimeMillis();
         Random rnd  = new Random(seed);
@@ -24,6 +21,13 @@ public class Flock {
             }
         }
         this.flock =  result;
+    }
+
+    public ArrayList<Animal> getCollection(){
+        return this.flock;
+    }
+    public int getSizeOfFlock(){
+        return this.flock.size();
     }
 
     public String getStringOfBreed() {
