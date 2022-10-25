@@ -38,5 +38,9 @@ test task
 ```
 
 ```aidl
+JAVA: openjdk-19
+```
+
+```aidl
 Entry point: Main
 ```
